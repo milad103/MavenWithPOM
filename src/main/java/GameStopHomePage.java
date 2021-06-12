@@ -26,7 +26,7 @@ public class GameStopHomePage {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
-        driver.get("https://gamestop.com");
+        driver.get("https://macys.com");
         //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -35,7 +35,7 @@ public class GameStopHomePage {
     @AfterMethod
     void closingBrowser() throws InterruptedException {
 
-        Thread.sleep(16000);
+        Thread.sleep(100000);
         driver.quit();
     }
 }
